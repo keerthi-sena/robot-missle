@@ -3,6 +3,8 @@
 # like a list of lowercase characters.
 import random
 import string
+
+
 print('ROBOT MISSILE')
 print()
 print('Type the correct code letter (A-Z) to defuse the missile.')
