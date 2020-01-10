@@ -3,22 +3,20 @@
 # like a list of lowercase characters.
 import random
 import string
-
-
 print('ROBOT MISSILE')
 print()
 print('Type the correct code letter (A-Z) to defuse the missile.')
-print('You have 4 chances.')
+print('You have 8 chances.')
 print()
 
 # Choose, at random, a lowercase ascii character
 code = random.choice(string.ascii_lowercase)
 
-# Loop until we get a match, or we've tried 4 times
+# Loop until we get a match, or we've tried 8 times
 guesses = 0
 success = False
 
-while not success and guesses < 4:
+while not success and guesses < 8:
     # Read a character from the user, and convert it to lower case
     guess = input('What is your guess? ').lower()
     guesses += 1
@@ -41,4 +39,4 @@ else:
     print('You blew it!')
     print()
     print("The correct code was '%s'." % code)
-    print('You did it%s!' % (' (just)' if guesses == 4 else ''))
+    print('You did it%s!' % (' (just)' if guesses == 8 else ''))
