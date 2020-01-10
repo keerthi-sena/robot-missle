@@ -28,7 +28,7 @@ while not success and guesses < 8:
 # The loop has exited. Let the user know if they succeeded or not.
 if success:
     print('TICK... FIZZ... CLICK...')
-    print('You did it!')
+    print('You done it!')
 else:
     print('BOOOOOOOOMMM...')
     print('You blew it!')
